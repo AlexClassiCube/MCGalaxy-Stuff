@@ -4,11 +4,11 @@ Stuff for MCGalaxy. Feel free to use any of it. If you have any suggestions for 
 ## Commands
 To compile and load:
 
-Put the .cs file in *extra/commands/source*
-Write */compile [name]*
-Write */cmdload [name]*
+Put the .cs file in **extra/commands/source**  
+Write **/compile [name]**  
+Write **/cmdload [name]**
 
-If you want the commands to load automatically upon start, insert their name (for example `LocalSay`) in *text/cmdautoload.txt*.
+If you want the commands to load automatically upon start, insert their name (for example `LocalSay`) in **text/cmdautoload.txt**.
 
 | Name | Description |
 | ------------- | -----|
