@@ -4,7 +4,7 @@ Stuff for MCGalaxy. Feel free to use any of it. If you have any suggestions for 
 ## Commands
 To compile and load:  
 · Put the .cs file in **extra/commands/source**  
-· Type **/compload [command name]**  
+· Execute **/compload [command name]** ingame or from console.  
 The command will then automatically upon each restart.  
 
 | Name | Description |
