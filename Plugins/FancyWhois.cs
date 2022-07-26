@@ -1,15 +1,11 @@
 using System;
-using System.IO;
 using System.Collections.Generic;
 
 using MCGalaxy;
 using MCGalaxy.DB;
 using MCGalaxy.Eco;
-using MCGalaxy.Events;
 using MCGalaxy.Commands;
-using MCGalaxy.Commands.Chatting;
-using MCGalaxy.Commands.Moderation;
-using MCGalaxy.Events.PlayerEvents;
+using MCGalaxy.Modules.Awards;
 
 namespace Core {
 
@@ -110,9 +106,9 @@ namespace Core {
 						p.Message("· First login: &a{0}",
 													 who.FirstLogin.ToString("dd MMM yyyy"));
 						string client = " ";
-						if (p.appName.CaselessContains("web")) {
+						if (who.appName.CaselessContains("web")) {
 							client = " &Son &fweb";
-						} else if (p.appName.CaselessContains("android") || p.appName.CaselessContains("mobile")) {
+						} else if (who.appName.CaselessContains("android") || who.appName.CaselessContains("mobile")) {
 							client = " &Son &fmobile";
 						} else {
 							client = " &Son &fdesktop";
