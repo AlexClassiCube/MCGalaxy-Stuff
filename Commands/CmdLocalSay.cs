@@ -1,7 +1,7 @@
 using System;
 using MCGalaxy;
 
-namespace Cmds {
+namespace Core {
     public sealed class CmdLocalSay : Command2 {        
         public override string name { get { return "LocalSay"; } }
         public override string shortcut { get { return "Local"; } }
