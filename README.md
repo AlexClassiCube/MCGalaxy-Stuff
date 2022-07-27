@@ -24,7 +24,7 @@ The command will automatically load on every server start from then on.
 ## Others
 Various MCGalaxy Plugins - https://github.com/ClassiCube/MCGalaxy-Plugins   
 
-Custom Model Plugin - https://github.com/NotAwesome2/MCGalaxy-CustomModels   
+Custom Models Plugin - https://github.com/NotAwesome2/MCGalaxy-CustomModels   
 
 Venk's Stuff - https://github.com/derekdinan/ClassiCube-Stuff   
 
