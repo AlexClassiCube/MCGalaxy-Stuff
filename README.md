@@ -19,7 +19,7 @@ The command will automatically load on every server start from then on.
 
 | Name | Description |
 | ------------- | -----|
-| **FancyWhois** | Adds "Fancy" bullet points to /WhoIs (/info, /i) and client (desktop, mobile, web).
+| **FancyWhois** | Adds "Fancy" bullet points to /WhoIs (/info, /i) and shows the user's client (desktop, mobile, web).
 
 ## Others
 Various MCGalaxy Plugins - https://github.com/ClassiCube/MCGalaxy-Plugins   
