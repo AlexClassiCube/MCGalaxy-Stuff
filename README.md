@@ -12,8 +12,8 @@ The command will automatically load on every server start from then on.
 | **LocalSay** | Like /say, but it only broadcasts the message to everyone in the map it's executed from.
 
 ## Plugins
-To load on your server:
-· Put the .cs file in **extra/commands/source**.  
+To load on your server:   
+· Put the .cs file in **plugins**.  
 · Execute **/pcompile [plugin name]**, then **/pload [plugin name]** ingame or from console.  
 The command will automatically load on every server start from then on.  
 
