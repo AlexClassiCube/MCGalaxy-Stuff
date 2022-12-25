@@ -108,7 +108,7 @@ namespace Core {
 						string client = " ";
 						if (who.appName.CaselessContains("web")) {
 							client = " &Son &fweb";
-						} else if (who.appName.CaselessContains("android") || who.appName.CaselessContains("mobile")) {
+						} else if (who.appName.CaselessContains("android") || who.appName.CaselessContains("mobile") || who.appName.CaselessContains("ios")) {
 							client = " &Son &fmobile";
 						} else {
 							client = " &Son &fdesktop";
