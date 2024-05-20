@@ -1,17 +1,21 @@
 using System;
+using System.IO;
 using System.Collections.Generic;
 
 using MCGalaxy;
 using MCGalaxy.DB;
 using MCGalaxy.Eco;
+using MCGalaxy.Events;
 using MCGalaxy.Commands;
-using MCGalaxy.Modules.Awards;
+using MCGalaxy.Commands.Chatting;
+using MCGalaxy.Commands.Moderation;
+using MCGalaxy.Events.PlayerEvents;
 
 namespace Core {
 
 	public class FancyWhois : Plugin {
 		public override string creator { get { return "Alex_"; } }
-		public override string MCGalaxy_Version { get { return "1.9.3.0"; } }
+		public override string MCGalaxy_Version { get { return "1.9.4.9"; } }
 		public override string name { get { return "FancyWhois"; } }
 
 		public override void Load(bool startup) {
@@ -82,7 +86,16 @@ namespace Core {
 				}
 
 				internal static void CommonCoreLine(Player p, string fullName, string name, Group grp, int messages) {
-						p.Message("{0} &S({1}):", fullName, name);
+						List<Pronouns> pros = Pronouns.GetFor(name);
+						string prns = "";
+						if (pros[0] != Pronouns.Default) {
+							prns = pros.Join((pro) => pro.Name, "&S, &a");
+							prns = " &S(&a" + prns + "&S)";
+						}
+						/*Pronouns pro = Pronouns.GetFor(name);
+						prns = "";
+						if (pro != Pronouns.Default) prns = " (&a" + pro.Name	+ "&S)";*/
+						p.Message("{0} &S({1}){2}:", fullName, name, prns);
 						p.Message("· Rank of {0}&S, wrote &a{1} &Smessages", grp.ColoredName, messages);
 				}
 
@@ -106,9 +119,9 @@ namespace Core {
 						p.Message("· First login: &a{0}",
 													 who.FirstLogin.ToString("dd MMM yyyy"));
 						string client = " ";
-						if (who.appName.CaselessContains("web")) {
+						if (who.Session.ClientName().CaselessContains("web")) {
 							client = " &Son &fweb";
-						} else if (who.appName.CaselessContains("android") || who.appName.CaselessContains("mobile") || who.appName.CaselessContains("ios")) {
+						} else if (who.Session.ClientName().CaselessContains("android") || who.Session.ClientName().CaselessContains("mobile")) {
 							client = " &Son &fmobile";
 						} else {
 							client = " &Son &fdesktop";

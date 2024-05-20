@@ -1,5 +1,5 @@
 # MCGalaxy-Stuff
-Stuff for MCGalaxy. Feel free to use any of it. If you have any suggestions or bug reports for existing commands or plugins, please open an issue or send me a message on Discord. I can be found on the [ClassiCube Discord server](https://discord.gg/DvYYyRw).
+Commands and plugins for MCGalaxy. Feel free to use any of them. If you have any suggestions or bug reports, please open an issue or send me a message on Discord. I can be found on the [ClassiCube Discord server](https://discord.gg/DvYYyRw).
 
 ## Commands
 To load on your server:  
@@ -7,19 +7,19 @@ To load on your server:
 · Execute **/compload [command name]** ingame or from console.  
 The command will automatically load on every server start from then on.  
 
-| Name | Description |
-| ------------- | -----|
-| **LocalSay** | Like /say, but it only broadcasts the message to everyone in the map it's executed from.
+| Name | Description | MCGalaxy Version |
+| ------------- | ----- | ----- |
+| **LocalSay** | Like /say, but it only broadcasts the message to everyone in the map it's executed from. | ?
 
 ## Plugins
 To load on your server:   
-· Put the .cs file in **plugins**.  
-· Execute **/pcompile [plugin name]**, then **/pload [plugin name]** ingame or from console.  
+· Put the .cs file in **plugins**.
+· Execute **/compload plugin [plugin name]** ingame or from console.  
 The command will automatically load on every server start from then on.  
 
-| Name | Description |
-| ------------- | -----|
-| **FancyWhois** | Adds "Fancy" bullet points to /WhoIs (/info, /i) and shows the user's client (desktop, mobile, web).
+| Name | Description | MCGalaxy Version |
+| ------------- | ----- | ----- |
+| **FancyWhois** | Adds *fancy* bullet points to /Whois (/info, /i) and shows the user's client (desktop, mobile, web). | 1.9.5.0 DEV BUILD
 
 ## Others
 Various MCGalaxy Plugins - https://github.com/ClassiCube/MCGalaxy-Plugins   
@@ -29,8 +29,6 @@ Custom Models Plugin - https://github.com/NotAwesome2/MCGalaxy-CustomModels
 Venk's Stuff - https://github.com/derekdinan/ClassiCube-Stuff   
 
 Not Awesome Script - https://github.com/NotAwesome2/Not-Awesome-Script   
-
-Not Awesome Survival - https://github.com/Goodlyay/Nas   
 
 Not Awesome 2 Commands - https://github.com/NotAwesome2/Commands   
 
