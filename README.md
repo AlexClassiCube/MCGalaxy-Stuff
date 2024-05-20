@@ -13,7 +13,7 @@ The command will automatically load on every server start from then on.
 
 ## Plugins
 To load on your server:   
-· Put the .cs file in **plugins**.
+· Put the .cs file in **plugins**  
 · Execute **/compload plugin [plugin name]** ingame or from console.  
 The command will automatically load on every server start from then on.  
 
