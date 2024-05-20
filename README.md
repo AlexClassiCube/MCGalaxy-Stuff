@@ -20,6 +20,7 @@ The command will automatically load on every server start from then on.
 | Name | Description | MCGalaxy Version |
 | ------------- | ----- | ----- |
 | **FancyWhois** | Adds *fancy* bullet points to /Whois (/info, /i) and shows the user's client (desktop, mobile, web). | 1.9.5.0 DEV BUILD
+| **CPEClientInfo** | Shows each player the name of their client on the top-right CPE message corner. | 1.9.4.3
 
 ## Others
 Various MCGalaxy Plugins - https://github.com/ClassiCube/MCGalaxy-Plugins   
